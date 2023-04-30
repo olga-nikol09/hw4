@@ -49,8 +49,8 @@ public class Main {
             System.out.println("Если возраст ребенка равен " + child + " он может кататься без сопровождения взрослого");
         }
         System.out.println("Задача6");
-        int freePlaces = 120;
-        int capacity = 120;
+        int freePlaces = 71;
+        int capacity = 102;
         int seatPlace = 60;
         int restPlaces = capacity - seatPlace;
         if (freePlaces < 120 && freePlaces >= restPlaces) {
@@ -63,15 +63,15 @@ public class Main {
             System.out.println("Вагон полностью занят");
         }
         System.out.println("Задача7");
-        int one = 55;
-        int two = 120;
+        int one = 5;
+        int two = 10;
         int three = 11;
-        if (one > two || one  > three ) {
+        if (one > two && one  > three ) {
             System.out.println(one + " больше чем " + two + " и " + three);
-        } else if (one > two || one < three) {
-            System.out.println(three + " больше чем " + two + " и " + one);
+        } else if (two > one && two > three) {
+            System.out.println(two + " больше чем " + three + " и " + one);
         } else {
-            System.out.println(two + " больше чем " + one + " и " + three);
+            System.out.println(three + " больше чем " + one + " и " + two);
         }
     }
 }
